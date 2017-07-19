@@ -97,7 +97,7 @@ function checkResponse(responseFromApi,expectedResponse ){
  
   var expectedResponse1=expectedResponse.toLowerCase();
   var responseFromApi1=responseFromApi.toLowerCase();
-   console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
+   console.log("API::"+responseFromApi1+"EXPECTED::"+expectedResponse1);
 if(expectedResponse1.indexOf(responseFromApi1) > -1) {
   console.log("test case passed");
   return true;
