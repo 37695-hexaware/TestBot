@@ -96,10 +96,7 @@ rl.on('error',function(err){
 
 
 function checkResponse(responseFromApi,expectedResponse ){
-  
-  var responseFromApi;
-responseFromApi = responseFromApi.map(v => v.toLowerCase());
-
+   
 console.log(words);
    console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
   
