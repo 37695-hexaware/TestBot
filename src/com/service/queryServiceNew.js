@@ -37,4 +37,3 @@ function queryProcessing(queryParameter,accessToken,handleResp){
 
 module.exports.queryProcessing=queryProcessing;
 
-
