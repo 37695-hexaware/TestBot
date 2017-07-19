@@ -58,7 +58,8 @@ function QueryProcessor(responseMap,questArray) {
     expectedResponse= responseMap.get(parseInt(linetempno));
     //console.log("type is "+(parseInt(linetempno)));
 //console.log("EXPECTED RESPONSE::"+expectedResponse);
-    var result=checkResponse(message,expectedResponse);
+  //  var result=checkResponse(message,expectedResponse);
+    var result=checkResponse(message.toLowerCase(),expectedResponse.toLowerCase());
 
 
 
