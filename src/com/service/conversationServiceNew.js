@@ -93,8 +93,10 @@ rl.on('error',function(err){
 
 }
 
-function checkResponse(responseFromApi.toLowerCase(),expectedResponse.toLowerCase() ){
+function checkResponse(responseFromApi,expectedResponse ){
   console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
+  var expectedResponse=expectedResponse.toLowerCase();
+  var responseFromApi=responseFromApi.toLowerCase();
 if(expectedResponse.indexOf(responseFromApi) > -1) {
   console.log("test case passed");
   return true;
