@@ -56,10 +56,9 @@ function QueryProcessor(responseMap,questArray) {
     var linetempno=questAndLine[0];
     //console.log("line temp no::"+linetempno);
     expectedResponse= responseMap.get(parseInt(linetempno));
+   
     //console.log("type is "+(parseInt(linetempno)));
 //console.log("EXPECTED RESPONSE::"+expectedResponse);
-  //  var result=checkResponse(message,expectedResponse);
- 
     var result=checkResponse(message,expectedResponse);
 
 
@@ -77,7 +76,9 @@ function QueryProcessor(responseMap,questArray) {
 
 
 function checkResponse(responseFromApi,expectedResponse ){
+  
   console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
+  
 
 if(expectedResponse && expectedResponse.indexOf(responseFromApi) > -1) {
   console.log("test case passed");
