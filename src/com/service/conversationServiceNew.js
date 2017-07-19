@@ -92,16 +92,13 @@ rl.on('error',function(err){
 
 
 }
-toUpper = function(x){ 
-  return x.toUpperCase();
-};
+
 
 
 function checkResponse(responseFromApi,expectedResponse ){
- expectedResponse1.map(toLower);
-  responseFromApi1.map(toLower);
-//  var expectedResponse1=expectedResponse.toLowerCase();
-//  var responseFromApi1=responseFromApi.toLowerCase();
+
+  var expectedResponse1=expectedResponse.toLowerCase();
+  var responseFromApi1=responseFromApi.toLowerCase();
    console.log("API::"+responseFromApi1+"EXPECTED::"+expectedResponse1);
 if(expectedResponse1.indexOf(responseFromApi1) > -1) {
   console.log("test case passed");
