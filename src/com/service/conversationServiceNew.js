@@ -95,18 +95,19 @@ rl.on('error',function(err){
 
 
 
-function checkResponse(responseFromApi,expectedResponse ){
+ 
+function checkResponse(responseFromApi,expectedResponse ){ 
+   console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse); 
+ if(expectedResponse.indexOf(responseFromApi) > -1) { 
+   console.log("test case passed"); 
+   return true; 
+ } 
+ else{ 
+ console.log("test case failed"); 
+ return false; 
+ } 
+ } 
 
-
-if(expectedResponse.indexOf(responseFromApi) > -1) {
-  console.log("test case passed");
-  return true;
-}
-else{
-console.log("test case failed");
-return false;
-}
-}
 
 function pushToMap(lineNumber, respString) {
     var respArray = responseMap.get(lineNumber);
