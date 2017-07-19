@@ -76,8 +76,7 @@ function QueryProcessor(responseMap,questArray) {
 
 function checkResponse(responseFromApi,expectedResponse ){
   console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
- var responseFromApi= responseFromApi.toLowerCase();
-  var expectedResponse=expectedResponse.toLowerCase();
+
 if(expectedResponse && expectedResponse.indexOf(responseFromApi) > -1) {
   console.log("test case passed");
   return true;
