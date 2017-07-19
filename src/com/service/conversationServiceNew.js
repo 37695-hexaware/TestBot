@@ -96,14 +96,6 @@ rl.on('error',function(err){
 
 
 function checkResponse(responseFromApi,expectedResponse ){
-
-/* for (var i = 0, L=responseFromApi.length ; i < L; i++) {
-   console.log("length is "+L);
-  responseFromApi[i]=responseFromApi[i].toLowerCase();
-}
-  for (var i = 0, L=expectedResponse.length ; i < L; i++) {
-  expectedResponse[i]=expectedResponse[i].toLowerCase();
-}  */
    console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
 if(expectedResponse.indexOf(responseFromApi) > -1) {
   console.log("test case passed");
