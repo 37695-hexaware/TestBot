@@ -9,7 +9,7 @@ var QueryService=require('./queryServiceNew');
 var util=require('../config/util.js');
 
 const responseMap = new Map();
-
+console.log(" in conversation service ");
 
 processRequest();
 
