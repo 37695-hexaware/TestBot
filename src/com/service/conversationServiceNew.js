@@ -97,7 +97,7 @@ rl.on('error',function(err){
 
 function checkResponse(responseFromApi,expectedResponse ){
    
-console.log(words);
+
    console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
   
 array2.map(toUpper);
