@@ -98,9 +98,19 @@ rl.on('error',function(err){
 function checkResponse(responseFromApi,expectedResponse ){
    
 
-   console.log("API::"+responseFromApi+"EXPECTED::"+expectedResponse);
-  
-array2.map(toUpper);
+    Array.prototype.toLowerCase = function() { 
+    for (var i = 0; i < responseFromApi.length; i++) {
+        this[i] = this[i].toString().toLowerCase(); 
+    }
+}
+console.log("response from api"+responseFromApi);
+Array.prototype.toLowerCase = function() { 
+    for (var i = 0; i < expectedResponse.length; i++) {
+        this[i] = this[i].toString().toLowerCase(); 
+    }
+}
+
+console.log("expectedResponse"+expectedResponse);
 if(expectedResponse.indexOf(responseFromApi) > -1) {
   console.log("test case passed");
   return true;
